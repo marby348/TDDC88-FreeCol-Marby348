@@ -63,7 +63,7 @@ public class SoundTest extends FreeColTestCase {
         soundPlayer = null;
     }
 
-    private void playSound(String id) {
+   /** private void playSound(String id) {
         File file = ResourceManager.getAudio(id);
         assertNotNull("No sound resource: " + id, file);
         try {
@@ -76,7 +76,7 @@ public class SoundTest extends FreeColTestCase {
         } catch (Exception e) {
             fail("Could not play " + id + ": " + e.getMessage());
         }
-    }
+    } **/
 
     public void testSound() {
         // these sounds are base resources, and should be enough for a test
